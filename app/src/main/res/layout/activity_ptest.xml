@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout1"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colorBackground"
+    tools:context="android.farmss.com.farmsscamera.PTest">
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:id="@+id/linearLayout">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#0099cc"
+                android:orientation="horizontal">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:id="@+id/home"
+                    android:drawableLeft="@drawable/ic_store_mall_directory_black_24dp"
+                    android:drawablePadding="10dp"
+                    android:layout_gravity="center"
+                    android:textColor="#33b5e5"
+                    android:textSize="15sp"
+                    android:text="Home" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center"
+                    android:drawableLeft="@drawable/ic_add_a_photo_black_24dp"
+                    android:drawablePadding="10dp"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:textColor="#33b5e5"
+                    android:textSize="15sp"
+                    android:id="@+id/camera"
+                    android:text="Camera" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textview"
+                android:textColor="#35b856"/>
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:id="@+id/imageView1"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"/>
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:id="@+id/imageView2"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
